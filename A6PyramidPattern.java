@@ -1,16 +1,16 @@
 /*
-        * 
-      * *
-    * * *
-  * * * *
-* * * * *
+    *
+   ***
+  *****
+ *******
+*********
 */
 
 import java.util.Scanner;
 
-public class A4LeftTriangle 
+public class A6PyramidPattern
 {
-  public static void main(String[] args)
+    public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter How many rows do you want : ");
@@ -20,15 +20,14 @@ public class A4LeftTriangle
         {
             for(int j = 1; j <= row - i; j++)
             {
-                System.out.print("  ");
+                System.out.print(" ");
             }
 
-            for(int k = 1; k <= i; k++)
+            for(int k = 1; k <= (2 * i - 1); k++)
             {
-                System.out.print("* ");
+                System.out.print("*");
             }
             System.out.println();
         }
     }
-   
 }
